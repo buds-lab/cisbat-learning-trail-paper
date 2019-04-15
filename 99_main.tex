@@ -1,0 +1,171 @@
+\documentclass[preprint,11pt,3p]{elsarticle} %review, or preprint
+
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{float}
+
+\usepackage{color}
+\usepackage{lscape}
+
+\usepackage[toc,page]{appendix}
+
+%For tracking changes
+\usepackage{changes}
+\definechangesauthor[name={Prageeth}, color=orange]{pj}
+\definechangesauthor[name={Zoltan}, color=blue]{zoltan}
+\definechangesauthor[name={Johannes}, color=cyan]{johannes}
+\definechangesauthor[name={Prageeth2}, color=magenta]{pj2}
+\usepackage[normalem]{ulem}
+
+%Flowcharts
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{shapes,arrows}
+\tikzstyle{decision} = [diamond, draw, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, 
+    text width=6em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse, node distance=3cm,
+    minimum height=2em]
+\tikzstyle{noborder} = [node distance=3cm, text width=6em, text centered, minimum height=2em]
+
+%For subfigure
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%Stop footnote from skipping to next page
+\interfootnotelinepenalty=10000
+
+%Some code to display the units after the equation 
+\usepackage{mathtools}
+\makeatletter
+\providecommand\add@text{}
+\newcommand\tagaddtext[1]{%
+  \gdef\add@text{#1\gdef\add@text{}}}% 
+\renewcommand\tagform@[1]{%
+  \maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}%
+}
+\makeatother
+
+
+
+\graphicspath{{./Images/}}
+
+\journal{CISBAT}
+
+%\journal{Solar Energy, Energy and Buildings, Building and Environment, Energy Science and Engineering}
+
+\begin{document}
+
+\begin{frontmatter}
+
+% \begin{figure}
+% \begin{center}
+% \includegraphics[width=\columnwidth, trim= 0cm 0cm 0cm 0cm,clip]{HeaderEP.pdf}
+% \label{fig:header}
+% \end{center}
+% \end{figure}
+
+\begin{center}
+{CISBAT 2019 International Conference - Future Buildings \& Districts - Energy Efficiency from Nano to Urban Scale, Lausanne, Switzerland}
+\end{center}
+
+\title{Crowdsourcing occupant comfort feedback at a net zero energy building in the tropics} 
+%Energy Performance of PV modules as Adaptive Building Shading Systems
+%Numerical Energy Analysis of PV Modules as Adaptive Building Shading Systems
+
+\address[buds]{Building and Urban Data Science Group,  Department of Building, Singapore} 
+\cortext[cor2]{Corresponding author}
+
+\author[buds]{T. Sood\corref{cor2}}
+    \ead{tapeeshsood@nus.edu.sg}
+
+% For whatever reason the affiliation needs to be defined after the authors. Otherwise the numbering gets messed up.
+
+\author[buds]{P. Jayathissa}
+    \ead{p.jayathissaa@nus.edu.sg}
+
+\author[buds]{M.Abdelrehman}
+  \ead{mahmoud@u.nus.edu}
+
+\author[buds]{M. Quintana}
+  \ead{matias@u.nus.edu}
+
+
+% \author[aut]{Z. Nagy}
+%     \ead{nagy@utexas.edu}
+% \address[aut]{Intelligent Environments Laboratory, Department of Civil, Architectural and Environmental Engineering,\\ The University of Texas at Austin, USA}
+
+
+\author[buds]{C. Miller }
+    \ead{clayton@nus.edu.sg}
+
+
+
+
+
+\begin{abstract}
+
+This study showcases the development of a human-building interaction framework - SDE Learning Trail - for a new Net Zero Energy Building (NZEB) at the School of Design \& Environment (SDE), National University of Singapore. This framework incentivizes building occupants and visitors to learn, interact and engage, in real-time, with the new building while providing environmental comfort feedback in a simple and intuitive way. 
+ 
+Ubiquitous sensing technologies today allow buildings to offer context-aware and interactive daily experiences. These technologies have a remarkable impact on building occupant's - digital and physical - experiences and nurture a dialogue at the individual as well as social levels in the built environment. Further integration of these technologies in building management systems allows a more detailed understanding of occupant comfort and space usage for building owners, managers, and designers. 
+ 
+Despite advancements in technology, recent studies have shown that most occupants are still dissatisfied with their built environment - which often translates into health impacts, increased sick days and low productivity. Moreover, over conditioning and oversizing of control systems in buildings has impacts on energy consumption and carbon emissions from buildings. 
+ 
+SDE Learning Trail describes the NZEB's six different building systems - Energy, Water, Hybrid Cooling, Wellness, Tropical Architecture, and Biophilic Design - as ‘trails’ for occupants and building visitors. Each ‘trail’ is composed of a number of physical “stations”, in the form of QR codes, placed at different areas in the building. A simple web application connects each station with information and interactive visualizations explaining the building systems. This enables occupants and visitors to engage with the new building and appreciate its design, construction, and sustainability features. 
+ 
+As users complete ‘trails’ by visiting different ‘stations’, the application collects user feedback for thermal, visual and aural comfort variables. This data allows the construction of personalized environmental comfort profiles of building occupants and visitors over time - which in turn is used for recommendation of comfortable workspaces. The results of this study provide the proof of concept for SpaceMatch, a spatial recommendation system, which integrates the comfort functionalities of “learning trail”, in order to recommend workspaces that match the comfort profile of the users in real time. 
+
+\end{abstract}
+
+\begin{keyword}
+Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \sep Mood Logging
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}
+\label{ch:introduction}
+\input{1_introduction}
+
+\section{Methodology}
+\label{ch:method}
+\input{2_methodology}
+
+% \section{Results}
+% \label{ch:results}
+% \input{3_results}
+
+
+% % \section{Discussion}
+% % \label{ch:discussion}
+% % \input{5_discussion}
+
+% \section{Discussion and Conclusion}
+% \label{ch:conclusion}
+% \input{6_conclusion}
+
+% \section{Acknowledgments}
+% \label{ch:acknowledgments}
+% \input{7_acknowledgments}
+
+% \begin{appendices}
+%  \label{ch:appendix}
+%  \input{8_appendix}
+%  \end{appendices}
+
+%% appendix sections are then done as normal sections
+%% \appendix
+%% \section{}
+%% \label{}
+
+%% bibitems, please use
+\clearpage %to prevent figures from coming before the bib
+  \bibliographystyle{elsarticle-num} 
+  \bibliography{references}
+
+\end{document}
+\endinput
