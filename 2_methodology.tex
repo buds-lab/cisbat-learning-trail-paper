@@ -1,43 +1,17 @@
 % !TEX root = 99_main.tex
 
+An experient was conducted at co-working spaces at the National Unviersity of Singapore. 15 participants were recruited for the experiment and equiped with a fitbit watch. The watch settings were set to also request thermal preference (prefer warmer, prefer cooler, comfy), and the set to force request feedback at the hours of 9:00, 11:00, 13:00, 15:00, and 17:00 
 
-The methodology runs the ASF Simulation. It will be briefly reviewed here for Simplicity 
+The watch was further complimented with IoT connected on-body and environmental sensors. The onbody sensor consists of a temperature and light sensor from mbient-labs that had been modified to fit the watch strap with a custom 3d printed case. An off body sensor measuring temperature and humidity was attached to the participants bag. The sensors communicate via bluetooth to raspberryPi gateways that had been positioned throughout the working space. 
 
-
-\subsection{Solar Radiation Evaluation}
-\label{ch:rad}
-
+Data from the cozie watch face, and the environmental sensors were aggrigated in an Influx cloud time-series database, which served as a platform for data aquisition and fault detection. Source codes can be found here [ref aurek-data-crunch repo].
 
 
-\subsection{Building Simulation Model}
-\label{ch:sim}
-
-\subsection{Sensitivities}
-
-Within this framework, three sensitivities will be analysed:
-
-\begin{description}
-
-\item[Building Envelope:] The building envelope is characterised in the RC model as $H_w$. ...
-\item[Infiltration:] The infiltration rate is modified in the $H_{ve}$ component of the RC model...
-\item[Thermal Capacitance:] The thermal capacitance of the mass is denoted as $C_m$ in the RC model. It...
-
-\end{description}
-
-
-\subsection{Analysis of Archetypes}
-
-- Building Archetypes are taken from CEA tool and evaluated within the ASF Framework
-
-- Table of Input Parameters for the different buildings
 % \begin{figure}
 % \begin{center}
-% \includegraphics[width=\columnwidth, trim= 0cm 0cm 0cm 0cm,clip]{radiationAnalysis.png}
-% \caption{A simulation result showing module and window insolation from 11:00-12:00 on the 16 June for a Zurich weather file and a specific module orientation.}
-% \label{fig:radiation}
+% \includegraphics[width=0.2\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{strap-pack.jpg}
+% \caption{Strap-Pack}
+% \label{fig:strappack}
 % \end{center}
 % \end{figure}
-
-
-
 

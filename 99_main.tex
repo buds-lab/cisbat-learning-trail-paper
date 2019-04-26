@@ -1,4 +1,4 @@
-\documentclass[preprint,11pt,3p]{elsarticle} %review, or preprint
+\documentclass[a4paper]{jpconf} %review, or preprint
 
 \usepackage{amssymb}
 \usepackage{graphics}
@@ -11,10 +11,7 @@
 
 %For tracking changes
 \usepackage{changes}
-\definechangesauthor[name={Prageeth}, color=orange]{pj}
-\definechangesauthor[name={Zoltan}, color=blue]{zoltan}
-\definechangesauthor[name={Johannes}, color=cyan]{johannes}
-\definechangesauthor[name={Prageeth2}, color=magenta]{pj2}
+\definechangesauthor[name={Tapeesh Sood}, color=orange]{T}
 \usepackage[normalem]{ulem}
 
 %Flowcharts
@@ -54,13 +51,13 @@
 
 \graphicspath{{./Images/}}
 
-\journal{CISBAT}
+
 
 %\journal{Solar Energy, Energy and Buildings, Building and Environment, Energy Science and Engineering}
 
 \begin{document}
 
-\begin{frontmatter}
+%\begin{frontmatter}
 
 % \begin{figure}
 % \begin{center}
@@ -69,47 +66,46 @@
 % \end{center}
 % \end{figure}
 
-\begin{center}
-{CISBAT 2019 International Conference - Future Buildings \& Districts - Energy Efficiency from Nano to Urban Scale, Lausanne, Switzerland}
-\end{center}
+% \begin{center}
+% {CISBAT 2019 International Conference - Future Buildings \& Districts - Energy Efficiency from Nano to Urban Scale, Lausanne, Switzerland}
+% \end{center}
 
 \title{Crowdsourcing occupant comfort feedback at a net zero energy building in the tropics} 
 %Energy Performance of PV modules as Adaptive Building Shading Systems
 %Numerical Energy Analysis of PV Modules as Adaptive Building Shading Systems
 
-\address[buds]{Building and Urban Data Science Group,  Department of Building, Singapore} 
-\cortext[cor2]{Corresponding author}
-
-\author[buds]{T. Sood\corref{cor2}}
-    \ead{tapeeshsood@nus.edu.sg}
-
-% For whatever reason the affiliation needs to be defined after the authors. Otherwise the numbering gets messed up.
-
-\author[buds]{P. Jayathissa}
-    \ead{p.jayathissaa@nus.edu.sg}
-
-\author[buds]{M.Abdelrehman}
-  \ead{mahmoud@u.nus.edu}
-
-\author[buds]{M. Quintana}
-  \ead{matias@u.nus.edu}
-
-
-% \author[aut]{Z. Nagy}
-%     \ead{nagy@utexas.edu}
-% \address[aut]{Intelligent Environments Laboratory, Department of Civil, Architectural and Environmental Engineering,\\ The University of Texas at Austin, USA}
-
-
-\author[buds]{C. Miller }
-    \ead{clayton@nus.edu.sg}
+\author{ T Sood$^1$, M Quintana$^1$,
+P Jayathissa$^1$, M. AbdelRehman$^1$, C. Miller$^1$ \footnote[4]{Present address:
+Department of Building, National University of Singapore, 4 Architecture Drive, Singapore}}
+\address{$^1$ Building and Urban Data Science Group,  Department of Building, Singapore}
+\ead{tapeeshsood@nus.edu.sg}
 
 
 
+% \author[buds]{T Sood\corref{cor2}}
+%     \ead{tapeeshsood@nus.edu.sg}
+% \address[buds]{Building and Urban Data Science Group,  Department of Building, Singapore} 
+% % For whatever reason the affiliation needs to be defined after the authors. Otherwise the numbering gets messed up.
+
+% \author[buds]{M. Quintana}
+%   \ead{matias@u.nus.edu}
+
+% \author[buds]{P. Jayathissa}
+%   \ead{p.jayathissa@u.nus.edu}
+
+% \author[unsw]{M.AbdelRehman}
+%     \ead{mahmoud@u.nus.edu}
+
+% \author[buds]{C. Miller \corref{cor1} }
+%     \ead{clayton@nus.edu.sg}
+
+
+%\cortext[cor2]{Corresponding author}
 
 
 \begin{abstract}
 
-This study showcases the development of a human-building interaction framework - SDE Learning Trail - for a new Net Zero Energy Building (NZEB) at the School of Design \& Environment (SDE), National University of Singapore. This framework incentivizes building occupants and visitors to learn, interact and engage, in real-time, with the new building while providing environmental comfort feedback in a simple and intuitive way. 
+This study presents a human-building interaction framework - SDE Learning Trail - currently deployed at the new Net Zero Energy Building (NZEB), School of Design \& Environment (SDE), National University of Singapore. The framework enables building visitors to learn about well & green features of the building while collecting environmental comfort feedback in a simple and intuitive way. This paper shares   
  
 Ubiquitous sensing technologies today allow buildings to offer context-aware and interactive daily experiences. These technologies have a remarkable impact on building occupant's - digital and physical - experiences and nurture a dialogue at the individual as well as social levels in the built environment. Further integration of these technologies in building management systems allows a more detailed understanding of occupant comfort and space usage for building owners, managers, and designers. 
  
@@ -119,34 +115,41 @@ SDE Learning Trail describes the NZEB's six different building systems - Energy,
  
 As users complete ‘trails’ by visiting different ‘stations’, the application collects user feedback for thermal, visual and aural comfort variables. This data allows the construction of personalized environmental comfort profiles of building occupants and visitors over time - which in turn is used for recommendation of comfortable workspaces. The results of this study provide the proof of concept for SpaceMatch, a spatial recommendation system, which integrates the comfort functionalities of “learning trail”, in order to recommend workspaces that match the comfort profile of the users in real time. 
 
+
+
+
 \end{abstract}
 
-\begin{keyword}
-Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \sep Mood Logging
-\end{keyword}
+% \begin{keyword}
+% Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \sep Mood Logging
+% \end{keyword}
 
-\end{frontmatter}
+% \end{frontmatter}
 
 \section{Introduction}
 \label{ch:introduction}
 \input{1_introduction}
 
-\section{Methodology}
+\section{The cozie watch-face}
+\label{ch:cozie}
+\input{1a_cozie}
+
+\section{Experimental methodology}
 \label{ch:method}
 \input{2_methodology}
 
-% \section{Results}
-% \label{ch:results}
-% \input{3_results}
+\section{Results}
+\label{ch:results}
+\input{3_results}
 
 
-% % \section{Discussion}
-% % \label{ch:discussion}
-% % \input{5_discussion}
+\section{Discussion}
+\label{ch:discussion}
+\input{5_discussion}
 
-% \section{Discussion and Conclusion}
-% \label{ch:conclusion}
-% \input{6_conclusion}
+\section{Conclusion}
+\label{ch:conclusion}
+\input{6_conclusion}\\
 
 % \section{Acknowledgments}
 % \label{ch:acknowledgments}
@@ -163,7 +166,7 @@ Comfort Feedback \sep Data Collection \sep Fitbit \sep Comfort Recommendation \s
 %% \label{}
 
 %% bibitems, please use
-\clearpage %to prevent figures from coming before the bib
+\section*{References}
   \bibliographystyle{elsarticle-num} 
   \bibliography{references}
 
