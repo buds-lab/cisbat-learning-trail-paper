@@ -4,6 +4,12 @@ Cozie is built as a clock-face for fitbit, a wearable health tracker with 25 mil
 
 \subsection{Overview}
 
+
+SDE Learning Trail describes the NZEB's six different building systems - Energy, Water, Hybrid Cooling, Wellness, Tropical Architecture, and Biophilic Design - as ‘trails’ for occupants and building visitors. Each ‘trail’ is composed of a number of physical “stations”, in the form of QR codes, placed at different areas in the building. A simple web application connects each station with information and interactive visualizations explaining the building systems. This enables occupants and visitors to engage with the new building and appreciate its design, construction, and sustainability features. 
+ 
+As users complete ‘trails’ by visiting different ‘stations’, the application collects user feedback for thermal, visual and aural comfort variables. This data allows the construction of personalized environmental comfort profiles of building occupants and visitors over time - which in turn is used for recommendation of comfortable workspaces. The results of this study provide the proof of concept for SpaceMatch, a spatial recommendation system, which integrates the comfort functionalities of “learning trail”, in order to recommend workspaces that match the comfort profile of the users in real time. 
+
+
 In this section we define "user" as the test participant who is wearing the fitbit, and "manager" as the person coordinating the experiment. \ 
 
 The default status of the clock-face is a simple binary question: "Comfy" or "Not Comfy", as seen in Figure \ref{fig:homescreen}. By simply clicking one of the icons, information about the users location (GPS), heart-rate, steps walked since last log, and the comfort data is anonymously sent to an Influx time series cloud database [Ref influx]. Data from this database can be simply queried with an API key that can be provided to the manager. Further documentation can be found on the cozie website [insert link].\\
