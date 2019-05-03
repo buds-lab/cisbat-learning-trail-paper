@@ -1,10 +1,27 @@
 % !TEX root = 99_main.tex
 
-An experient was conducted at co-working spaces at the National Unviersity of Singapore. 15 participants were recruited for the experiment and equiped with a fitbit watch. The watch settings were set to also request thermal preference (prefer warmer, prefer cooler, comfy), and the set to force request feedback at the hours of 9:00, 11:00, 13:00, 15:00, and 17:00 
+A total of 35 stations (6 trails) were spread across the 6 floors of the new NZEB. The placement of a trail was based on where the building feature was most pronounced. For example, the water trail stations were placed right next to the storm water feature, bio-retention basin and the detention tank for the building. This helped instantly contextualize the digital content of trail's stations with their physical location in the building.\\
 
-The watch was further complimented with IoT connected on-body and environmental sensors. The onbody sensor consists of a temperature and light sensor from mbient-labs that had been modified to fit the watch strap with a custom 3d printed case. An off body sensor measuring temperature and humidity was attached to the participants bag. The sensors communicate via bluetooth to raspberryPi gateways that had been positioned throughout the working space. 
+Stations were placed adjacent to fixed sensors measuring 7 environmental and non-environmental attributes in real-time: temperature, humidity, noise, light, carbon-dioxide, volatile organic compounds and presence. The stations were distributed across outdoor, semi-outdoor and indoor spaces based on trail configuration, station content, proximity to environmental sensors.\\
 
-Data from the cozie watch face, and the environmental sensors were aggrigated in an Influx cloud time-series database, which served as a platform for data aquisition and fault detection. Source codes can be found here [ref aurek-data-crunch repo].
+The mobile web application was launched on Jan 30th, 2019 at the opening ceremony of the new NZEB. Over the next three months - staff \& students from the university, external governmental, industrial and academic delegations were organized into groups for taking guided tours of the new NZEB by the research team with help from the new building's management.\\
+
+Each participant in the guided tours' used the mobile web application to go through trails, scanning stations with the help of an embedded QR code scanner in the application. The application was built in a way such that each user was prompted to only provide feedback 5 times out of all stations visited. A total of 616 users used the application over 3 months, providing [INSERT NUMBER] environmental comfort feedback points.\\
+
+The data from the users and sensors were aggregated using a Influx cloud time-series database - which served as a platform for data acquisition, storage and error detection. The aggregated data from comfort feedback allowed construction of personalized comfort profiles for users ,and environmental profiles for spaces by combining real-time environmental data from fixed sensors and location based user feedback. Details regarding outcomes of from this period are further presented in the results section of this paper.\\
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Fig2.jpg}
+\caption{Overview of Experiments. (a) Biophilic Design trail as an example of trail placement in the building, (b) Guided tours for participants, (c) Feedback prompts in the application, (d) Overview of data communication.}
+\label{fig:experiments}
+\end{center}
+\end{figure}
+
+% The comfort profile is then used by 'Spacematch' - a spatial recommendation engine - to provide recommendations of comfortable workspaces based on the users profile. providing the proof of concept for SpaceMatch - a spatial recommendation system - which integrates the comfort functionalities of “SDE learning trail”, in order to recommend workspaces that match the comfort profile of the users in real time. 
+
 
 
 % \begin{figure}
