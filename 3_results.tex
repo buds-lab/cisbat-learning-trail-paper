@@ -3,26 +3,27 @@
 
 \subsection{Overview of feedback data}
 
-Figure \ref{fig:feedbackdata}a shows the distribution of feedback votes between indoor and outdoor spaces. It's interesting to note that most feedback votes have been collected near the outdoor stations of the SDE Learning Trail. Restricted access for research participants to stations located at indoor spaces and limited nudging of users to provide feedback are some of the important reasons for this distribution. Moreover, the locations for outdoor stations are naturally ventilated and are shaded due to the building's large, overarching roof. These environmental conditions also had an effect on the feedback received through the application as shown in Figure \ref{fig:feedbackdata}b.
+Figure \ref{fig:feedbackdata}a shows the distribution of feedback votes between indoor and outdoor spaces. It's interesting to note that most feedback votes have been collected near the outdoor stations of the SDE Learning Trail. Restricted access for research participants to stations located at indoor spaces and limited nudging of users to provide feedback are some of the important reasons for this distribution. Moreover, the locations for outdoor stations are naturally ventilated and are shaded due to the building's large, overarching roof. These environmental conditions also had an effect on the feedback received through the application as shown in Figure \ref{fig:feedbackdata}b.\\
 
 Figure \ref{fig:feedbackdata}b shows a summary of all feedback categories for Temperature, light and noise variables. Its important to note that certain categories were less favoured than others due to a majority of the feedback being provided from stations located outdoor. For instance, "Prefer Warmer", "Prefer Louder" responses were considerably less employed than others in the same category due to external weather and urban conditions of the building site.    
-
-%It is interesting to note that there is on average [INSERT NUMBER HERE] times more responses in the hours of 9:00, 11:00, 13:00, 15:00, and 17:00 when the occupant is buzzed and forced to give feedback. Nevertheless there are still significant amounts of responses made outside these times through the motivation of the participants themselves. Figure \ref{fig:responseRate} details the daily responses from the participants, and no observable decrease in responses can be made. Dips in responses naturally occur during the weekend. 
 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Fig3.jpg}
-\caption{Overview of Feedback Data (a) Split between outdoor vs. indoor feedback data (b) Distribution of votes between temperature, light and noise variables.}
+\caption{Overview of Feedback Data: (a) Split between outdoor vs. indoor feedback data (b) Distribution of votes between temperature, light and noise variables.}
 \label{fig:feedbackdata}
 \end{center}
 \end{figure}
 
 
-\subsection{Influence of environmental profiles of spaces}
+\subsection{Clustering of environmental profiles for spaces}
 \label{ch:userResults}
 
-%Individual user feedback can be clustered using un-supervised learning techniques. In this example, we use a hierarchal k-means clustering based on euclidean distance using the Nearest-Point-Algorithm. The results, shown in Figure \ref{fig:clustering}, show four distinct clusters of users. 
+Individual user feedback was clustered using un-supervised learning techniques. We used Ward's method for hierarchal clustering [INSERT REF] based on standardized euclidean distance.\\
+The results, shown in Figure \ref{fig:clustering}, show 8 distinct clusters for environmental profiles of spaces based on user comfort feedback. It can be observed that spaces are most frequently perceived as "comfy" or comfortable followed by preferences for more cooling and less noise. This pattern is rightly reflective of most feedback collected in outdoor spaces as noted before.\\
+
+It is important to note that unique profiles for spaces can be identified based on user's comfort perception for temperature, light and noise conditions. For instance, space cluster "A" is 40-50\% of the time thermally and aurally comfortable and 80\% or more times visually comfortable. On the other hand, space cluster "F" is perceived 80-100\% thermally, aurally, visually comfortable most times.           
 %Users that are comfortable 100\% of the time, users that are comfortable 60-80 \% of the time, those that are comfortable 50\% of the time and generally would prefer it cooler, those that are comfortable 50\% of the time and would prefer it both warmer and cooler. 
 %Understanding and defining these differences in user preferences can be used to recommend spaces that may better suit the needs of the occupant. For example, User 5 and User 10 can be recommended working spaces that are on average cooler. User 13 on the other hand appears to have a broad comfort spectrum. 
 
@@ -38,8 +39,8 @@ Figure \ref{fig:feedbackdata}b shows a summary of all feedback categories for Te
 \begin{figure}
 \begin{center}
 \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Fig4.jpg}
-\caption{Clustering (a) Clustering space type based on user feedback (b) Clustering users based on comfort preferences.}
-\label{fig:Clustering}
+\caption{Clustering: (a) Clustering space type based on user feedback (b) Clustering users based on comfort preferences.}
+\label{fig:clustering}
 \end{center}
 \end{figure}
 
