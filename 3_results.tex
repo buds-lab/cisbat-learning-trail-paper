@@ -1,11 +1,12 @@
 % !TEX root = 99_main.tex
 
 
-\subsection{Overview of feedback data}
 
-Figure \ref{fig:feedbackdata}a shows the distribution of feedback votes between indoor and outdoor spaces. It's interesting to note that most feedback votes have been collected near the outdoor stations of the SDE Learning Trail. Restricted access for research participants to stations located at indoor spaces and limited nudging of users to provide feedback are some of the important reasons for this distribution. Moreover, the locations for outdoor stations are naturally ventilated and are shaded due to the building's large, overarching roof. These environmental conditions also had an effect on the feedback received through the application as shown in Figure \ref{fig:feedbackdata}b.\\
+\subsection{Overview of the feedback data}
 
-Figure \ref{fig:feedbackdata}b shows a summary of all feedback categories for Temperature, light and noise variables. Its important to note that certain categories were less favoured than others due to a majority of the feedback being provided from stations located outdoor. For instance, "Prefer Warmer", "Prefer Louder" responses were considerably less employed than others in the same category due to external weather and urban conditions of the building site.    
+Figure \ref{fig:feedbackdata}a shows the distribution of feedback votes between indoor and outdoor spaces. It's interesting to note that most feedback votes have been collected at outdoor stations in the trail. Limited nudging of users to provide feedback to avoid feedback fatigue \cite{EffectsFeedbackFatigue} and controlled access to participants for stations within indoor spaces are some of the important reasons for this distribution.\\
+
+Further the locations for outdoor stations are naturally ventilated but shaded due to the building's large, overarching roof and open design. These environmental conditions had an effect on the feedback received through the application as shown in Figure \ref{fig:feedbackdata}b.  As shown, the figure provides a summary of all feedback vote categories for Temperature, light and noise variables. Its important to note that certain categories were less favored than others due to a majority feedback gathered from stations located outdoor. For instance, "Prefer Warmer", "Prefer Louder" responses were considerably less employed by the participants as compared to others in the same category due to external weather and urban conditions of the building site.\\    
 
 
 \begin{figure}
@@ -17,13 +18,17 @@ Figure \ref{fig:feedbackdata}b shows a summary of all feedback categories for Te
 \end{figure}
 
 
-\subsection{Clustering of environmental profiles for spaces}
+\subsection{Distinguishing spaces based on comfort profiles}
 \label{ch:userResults}
 
-Individual user feedback was clustered using un-supervised learning techniques. We used Ward's method for hierarchal clustering [INSERT REF] based on standardized euclidean distance.\\
-The results, shown in Figure \ref{fig:clustering}, show 8 distinct clusters for environmental profiles of spaces based on user comfort feedback. It can be observed that spaces are most frequently perceived as "comfy" or comfortable followed by preferences for more cooling and less noise. This pattern is rightly reflective of most feedback collected in outdoor spaces as noted before.\\
+Individual user feedback was clustered using un-supervised learning techniques. We used Ward's method for hierarchal clustering based on standardized euclidean distance.\\
+The results, shown in Figure \ref{fig:clustering}, show 8 distinct clusters for comfort profiles of spaces based on user feedback. It can be observed that spaces are most frequently perceived as "comfy" or comfortable followed by preferences for more cooling and less noise. This pattern is reflective of majority of the feedback collected from outdoor spaces as noted before.\\
 
-It is important to note that unique profiles for spaces can be identified based on user's comfort perception for temperature, light and noise conditions. For instance, space cluster "A" is 40-50\% of the time thermally and aurally comfortable and 80\% or more times visually comfortable. On the other hand, space cluster "F" is perceived 80-100\% thermally, aurally, visually comfortable most times.           
+It is important to recognize that unique profiles for spaces can be identified based on user's comfort perception of temperature, light and noise conditions. For instance, space cluster "A" is 40-50\% of the time thermally and aurally comfortable and 80\% or more visually comfortable. On the other hand, space cluster "F" is perceived 80-100\% thermally, aurally, visually comfortable most times.           
+
+
+\subsection{Influence of occupant comfort personality}
+
 %Users that are comfortable 100\% of the time, users that are comfortable 60-80 \% of the time, those that are comfortable 50\% of the time and generally would prefer it cooler, those that are comfortable 50\% of the time and would prefer it both warmer and cooler. 
 %Understanding and defining these differences in user preferences can be used to recommend spaces that may better suit the needs of the occupant. For example, User 5 and User 10 can be recommended working spaces that are on average cooler. User 13 on the other hand appears to have a broad comfort spectrum. 
 
@@ -31,8 +36,6 @@ It is important to note that unique profiles for spaces can be identified based 
 
 
 %It is important to note here that the data is not entirely representative of a single building space, as the user may have given feedback while having lunch outside. There are even feedback results made outside of working hours as seen in \ref{fig:hourPlot} \ref{fig:responseRate}. Conclusions such as "Building Zone A was comfortable 80\% of the time" can therefore not be made. This will be further discussed in Section \ref{ch:discussion}.
-
-\subsection{Influence of occupant comfort personality}
 
 %It is widely known that heart-rate influences metabolic activity, and therefore an occupants comfort preference. Figure \ref{fig:heartHist} details the number of responses for each thermal response based on the heart rate. [INSERT NUMBER HERE ] \% of "Prefer Cooler" responses occurred during higher metabolic activity when the heart rate was greater than 100 beats per minute. If we filter out these responses,and apply the same algorithms detailed in Section \ref{ch:userResults}, we see a slightly different response and clustering pattern, as shown in Figure \ref{fig:lowHeartUsers}. 
 
