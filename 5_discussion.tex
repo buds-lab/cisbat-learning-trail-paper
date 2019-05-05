@@ -1,16 +1,25 @@
 % !TEX root = 99_main.tex
 
-\subsection{Large Uncontrolled Data vs. Small Controlled Data}
+\subsection{Choice of a field based experiment setup}
 
-%Let us take a step back and observe how market analysis was conducted. Traditionally, super markets would call individual households and ask for their feedback about what products they would like to have in stock. In modern times, applications such as facebook mine preference data from users based on what posts they "liked", and use this to generate targeted advertising for each individual.
-
-%One can draw these parallels to human comfort surveying. 
-
+The goals for conducting comfort assessments under controlled lab settings can be different from conducting the same in field conditions. The former is used for dispositional approaches - where the surrounding environment doesn't effect participant behavior, whereas the latter is focused on situational approaches - where behavior is dependent on the surrounding context.
+Given the focus of this study was to understand the dynamic nature of occupant comfort in different environmental and spatial contexts, the research team chose a field based experiment setup over an artificial setting. This provides higher ecological validity \cite{andrade2018internal}to the findings of the experiment compared to a lab experiment.           
 
 
-%To further add to this, the uncontrolled method has minimal management overhead, and can be scaled by purchasing more devices, thus providing an even richer data set along the user axis. 
+\subsection{Findings from large data vs. small data}
+%\label{ch:localisation}
 
-\subsection{In-situ vs. remote experimental setup}
+Generalizing findings for the larger population using detailed surveys or interview results from a small group of participants was a trusted method in the building industry for comfort assessments in the past. However with new technologies and modern data capabilities, collection, processing and analysis of large datasets has become easier. Thats why this study utilizes QR codes, an interactive mobile application and time-series database infrastructure to collect and process a considerably large comfort assessment data in a short time.\\
+
+It's also interesting to reflect upon the kind of conclusions that can be derived. The traditional method can derive detailed conclusions such as "5 of the 20 users felt cold at temperatures lower than 22 $^\circ$C". Whereas the large data method can draw conclusions such as "5 of 20 users prefer cooler working environments". Since the aim of the study was to find correlations rathe between users comfort preferences and their spatial environment rather than "exact" cause and effect relationships, limiting the 
+  
+%The clock-face collects GPS data from the fitbit, however GPS data indoors is not always reliable, and often not accessible. Out of the [INSERT NUMBER OF DATAT POINTS] only 347 were tagged with GPS data. This presents a limitation in its current form. \
+
+%The team are currently investigating other methods of localistion, which includes a continuous logging of GPS data to infer an entry and exit of a building space, bluetooth based localisation from Steerpath, integration with the SpaceMatch application [CIT SpaceMatch], and pattern matching of wearable sensor data to indoor sensors [CITE JUN]
+
+
+
+\subsection{3-point scale}
 
 %Uncontrolled experiments have minimal management overhead, which means that it can be easily scaled to larger groups by purchasing more devices. Furthermore, the users are analysed in their natural work environments and give feedback with a simple click on their watch. This reduction of effort results in no fatigue in the number of volantary responses given as shown in Figure \ref{fig:responseRate}.
 
@@ -32,15 +41,7 @@
 
 
 
-\subsection{Scalability}
-\label{ch:localisation}
-
-%The clock-face collects GPS data from the fitbit, however GPS data indoors is not always reliable, and often not accessible. Out of the [INSERT NUMBER OF DATAT POINTS] only 347 were tagged with GPS data. This presents a limitation in its current form. \
-
-%The team are currently investigating other methods of localistion, which includes a continuous logging of GPS data to infer an entry and exit of a building space, bluetooth based localisation from Steerpath, integration with the SpaceMatch application [CIT SpaceMatch], and pattern matching of wearable sensor data to indoor sensors [CITE JUN]
-
-
-\subsection{Problems Encountered}
+\subsection{Interpreting clusters of poeple and spaces}
 
 %During the course of the experiment two fitbits were lost by the users. One was lost permanently, and the other was found at a later date. There were also some issues with the collection of the enviornmental sensor data, resulting in only [79] matching points of the comfort feedback to the sensors, where as we expected approcimatly 200 matching points.
 

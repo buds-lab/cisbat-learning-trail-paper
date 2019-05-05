@@ -4,10 +4,10 @@
 
 \subsection{Overview of the feedback data}
 
-Figure \ref{fig:feedbackdata}a shows the distribution of feedback votes between indoor and outdoor spaces. It's interesting to note that most feedback votes have been collected at outdoor stations in the trail. Limited nudging of users to provide feedback to avoid feedback fatigue \cite{EffectsFeedbackFatigue} and controlled access to participants for stations within indoor spaces are some of the important reasons for this distribution.\\
+Figure \ref{fig:feedbackdata}a shows the distribution of feedback votes between indoor and outdoor spaces. It's interesting to note that most feedback votes have been collected at outdoor stations in the trail. Limited nudging of users to provide feedback to avoid feedback fatigue \cite{EffectsFeedbackFatigue} and controlled access to participants for stations within indoor spaces are some of the reasons for this distribution.\\
 
 
-Further the locations for outdoor stations are naturally ventilated but shaded due to the building's large, overarching roof and open design. These environmental conditions had an effect on the feedback received through the application as shown in Figure \ref{fig:feedbackdata}b.  As shown, the figure provides a summary of all feedback vote categories for Temperature, light and noise variables. Its important to note that certain categories were less favored than others due to a majority feedback gathered from stations located outdoor. For instance, "Prefer Warmer", "Prefer Louder" responses were considerably less employed by the participants as compared to others in the same category due to external weather and urban conditions of the building site.\\    
+The locations of outdoor stations are naturally ventilated but shaded due to the building's large, overarching roof and open design. These environmental conditions had an effect on the feedback received as shown in Figure \ref{fig:feedbackdata}b. As shown, the figure provides a summary of all feedback vote categories for Temperature, light and noise variables. Its important to note that certain categories were less favored than others due to the feedback majority being gathered from outdoor stations. For instance, "Prefer Warmer" in temperature responses, and "Prefer Louder" in the noise responses were considerably less employed by the participants as compared to others in the same category due to tropical weather conditions and urban context of the building site.    
 
 
 % \begin{figure}
@@ -21,9 +21,9 @@ Further the locations for outdoor stations are naturally ventilated but shaded d
 
 \subsection{Correlations between spatio-temporal variables}
 
-Figure \ref{fig:feedbackdata}b shows correlations between different spatio temporal attributes for indoor and outdoor spaces.\\
+Figure \ref{fig:feedbackdata}b shows correlations between different spatio temporal attributes for indoor and outdoor spaces.
 
-As shown in Figure \ref{fig:feedbackdata}b\&c the relationship between "noise levels" and "presence" between indoor and outdoor spaces is reversed. This can be explained by the difference in noise source between the space categories - for indoor spaces the noise source were building occupants whereas for outdoor spaces the surrounding urban context was the primary source.\\
+Figure \ref{fig:feedbackdata}b\&c shows that the relationship between "noise levels" and "presence" between indoor and outdoor spaces is reversed. This can be explained by the difference in primary noise source between the two space types - for indoor spaces the building occupants were the primary noise source, whereas for outdoor spaces thit was e surrounding urban context.\\
 
 Another interesting converse relationship is between "light levels" and "temperature" for indoor and outdoor spaces. An increase in light levels led to an increase in temperature for indoor spaces, whereas for outdoor spaces this effect could have been mitigated due to external environmental factors such as wind and humidity levels.\\
 
@@ -40,7 +40,7 @@ Individual user feedback was clustered using un-supervised learning techniques. 
 
 The results, shown in Figure \ref{fig:clustering}a, show 8 distinct clusters for comfort profiles of spaces based on user feedback. It can be observed that spaces are most frequently perceived as "comfy" or comfortable followed by preferences for more cooling and less noise. This pattern is reflective of majority of the feedback collected from outdoor spaces as noted before.\\
 
-It is important to recognize that unique profiles for spaces can be identified based on user's comfort perception of temperature, light and noise conditions. For instance, space cluster "A" is 40-50\% of the time thermally and aurally comfortable and 80\% or more visually comfortable. On the other hand, space cluster "F" is perceived 80-100\% thermally, aurally, visually comfortable most times.\\           
+It is important to recognize that unique profiles for spaces can be identified based on user's comfort perception of temperature, light and noise conditions. For instance, space cluster "A" is 40-50\% of the time thermally and aurally comfortable and 80\% or more visually comfortable. On the other hand, space cluster "F" is perceived 80-100\% thermally, aurally, visually comfortable most times.         
 
 
 \subsection{Discovering occupant comfort profiles}
@@ -49,7 +49,7 @@ As shown in Figure \ref{fig:clustering}b, distinct [INSERT NUMBER] clusters can 
 
 Further, its interesting to discover differences in user "types" based on the clustering. For instance, type "A" users were 70-85\% of the time visually and thermally comfortable but only 30-45\% of the time aurally comfortable in the building. On the other hand, type "R" users were 85-100\% visually and aurally comfortable but 35-50\% thermally comfortable. Understanding and defining these differences between user types can be used to personalize spatial recommendations to individual users based on their past preferences.\\       
 
-Its important to note that we slightly changed our approach for clustering individual user preferences for this analysis - though we used Ward's method for hierarchical clustering but changed to euclidean distance.\\   
+Its important to note that we slightly changed our approach for clustering individual user preferences for this analysis - though we used Ward's method for hierarchical clustering but changed to euclidean distance.   
 
 
 \begin{figure}
