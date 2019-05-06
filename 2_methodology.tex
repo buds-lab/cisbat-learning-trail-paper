@@ -1,23 +1,24 @@
 % !TEX root = 99_main.tex
 
 
-A total of 35 stations (6 trails) were spread across the 6 floors of the new NZEB. The placement of a trail in the building was based on where the building feature was most pronounced. For example, the water trail stations were placed right next to the storm water feature, bio-retention basins and the detention tank for the building. This helped instantly contextualize the digital content of trails and stations with their physical location in the building.
+A total of 35 stations (6 trails) were spread across the 6 floors of the new NZEB. The placement of a trail in the building was based on where the building feature was most pronounced. For example, the water trail stations were placed right next to the storm water feature, bio-retention basins and the detention tank for the building. This helped instantly contextualize the digital content of trails and stations with their physical location in the building.\\
+
 Stations were placed in proximity of fixed sensors measuring 7 attributes in real-time: temperature, humidity, noise, light, carbon-dioxide, volatile organic compounds and presence. The stations were distributed across outdoor and indoor spaces based on trail configuration, station content, proximity to fixed sensors.\\
 
 The interactive mobile web application was launched on Jan 30th, 2019 at the opening ceremony of the new NZEB. Over the next three months - staff \& students from the university, external governmental, industrial and academic delegations were organized into groups for taking guided tours of the new NZEB by the research team with help from NZEB management.\\
 
-Each participant in the guided tours' used the interactive mobile application to go through trails, scanning stations with the help of an embedded QR code scanner in the application. The application was built such that each user was prompted to provide temperature, light and noise level feedback though a 3-point scale as shown in Figure\ref{fig:experiments}c. As shown, three options in each category were presented to users to provide feedback which are as follows: Temperature - "Prefer Warmer", "Comfy", "Prefer Cooler" , Light - "Prefer Brighter", "Comfy","Prefer Dimmer", Noise - "Prefer Louder","Comfy","Prefer Quieter".  
-Each user was prompted 5 times out of all the stations they visited to provide feedback during the guided tour. Feedback prompts were randomly pushed by the application for each user. A total of 616 users used the application over 3 months, providing 1163 environmental comfort feedback points.\\
+Each participant in the guided tours' used the interactive mobile application to go through trails as shown in Figure \ref{fig:mobileapp}, scanning stations with the help of an embedded QR code scanner in the application. The application was built such that each user was prompted to provide temperature, light and noise level feedback though a 3-point scale as shown in Figure\ref{fig:mobileapp}c. As shown, three options in each category were presented to users to provide feedback which are as follows: Temperature - ``Prefer Warmer'', ``Comfy'', ``Prefer Cooler'' , Light - ``Prefer Brighter'', ``Comfy'', ``Prefer Dimmer'', Noise - ``Prefer Louder'', ``Comfy'', ``Prefer Quieter''.  
+Each user was prompted randomly 5 times out of all the stations they visited to provide feedback during the guided tour. A total of 616 users used the application over 3 months, with 79 users providing over at least 5 votes each, totaling 1163 environmental comfort feedback points.\\
 
-The data from the users and fixed sensors was aggregated using a Influx cloud time-series database - which served as a platform for data acquisition, storage and error detection. The combination of location based user comfort feedback and fixed environmental sensor data allowed clustering analysis of personalized comfort profiles of users ,and environmental profiles of spaces. Details regarding outcomes of this period are presented in the results section of this paper. An overview of the experiment setup is provided in Figure\ref{fig:experiments}.\\
+The data from the users and fixed sensors was aggregated using a Influx cloud time-series database - which served as a platform for data acquisition, storage and error detection. The combination of location based user comfort feedback and fixed environmental sensor data allowed clustering analysis of personalized comfort profiles of users. Details regarding outcomes of this period are presented in the next section.
 
 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Fig2.jpg}
-\caption{Overview of Experiment Setup. (a) Biophilic Design trail as an example of trail placement in the building, (b) Photos from guided tours for participants, (c) Feedback prompts in the application, (d) Overview of data communication.}
-\label{fig:experiments}
+\caption{Overview of Mobile Application: (a) The Welcome screen and an inbuilt QR code scanner capability of the app, (b) Screens for sharing station content and trail configuration with the users, (c) Inbuilt feedback prompts, (d) Overview of data communication.}
+\label{fig:mobileapp}
 \end{center}
 \end{figure}
 
