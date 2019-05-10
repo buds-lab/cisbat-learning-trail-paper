@@ -1,12 +1,8 @@
 % !TEX root = 99_main.tex
 
-\subsection{Discovering occupant comfort profiles}
+\subsection{Discovering occupant personal comfort preferences}
  
-As shown in Figure \ref{fig:clustering}, 5 distinct clusters can be observed based on differences in preferences for temperature, light and noise levels across users. Predominantly users were comfortable and seldom preferred a change to cooler or quieter envronments.\\
-
-Its interesting to discover differences in user "types" based on the clustering. For instance, type "A" prefers quieter spaces as compared to others, whereas type "B" prefers quieter surroundings, and type "C" prefers bright and cool spaces, type "D" is mostly comfortable with any condition and type "E" prefers a mix of conditions, adjusting preferences but mostly comfortable with light levels.\\ 
-
-Understanding and defining these differences between user types can be used to personalize spatial recommendations to individual users based on their past preferences. Its important to note that Individual user feedback was clustered using un-supervised learning techniques. We used Ward's method for hierarchical clustering based on euclidean distance.\\ 
+As shown in Figure \ref{fig:clustering}, five distinct clusters can be observed based on differences in preferences for temperature, light and noise levels across users. Predominantly users were comfortable and seldom preferred a change to cooler or quieter environments. Its interesting to discover differences in user "types" based on the clustering. For instance, type \emph{A} prefers quieter spaces as compared to others, whereas \emph{B} prefers quieter surroundings. Type \emph{C} prefers bright and cool spaces, type \emph{D} is mostly comfortable with any condition and type \emph{E} prefers a mix of conditions, adjusting preferences but mostly comfortable with light levels. Understanding and defining these differences between user types can be used to personalize spatial recommendations to individual users based on their past preferences. Its important to note that Individual user feedback was clustered using unsupervised learning techniques. We used Ward's method for hierarchical clustering based on euclidean distance.\\ 
 
 
 %our approach for clustering individual user preferences for this analysis - though we used Ward's method for hierarchical clustering but changed to euclidean distance. 
@@ -64,7 +60,7 @@ Understanding and defining these differences between user types can be used to p
 \begin{figure}
 \begin{center}
 \includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Fig3.jpg}
-\caption{Clustering users based on comfort preferences A)This user type prefers quieter spaces compared to others, B)This type prefers cooler and quieter spaces, C)This type prefers brighter and cooler spaces, D)This type is mostly comfortable, E)The preferences of this type keep changing as compared to others but they are usually comfortable with light levels.}
+\caption{Indoor and outdoor comfort preference clustering: Users are grouped based on comfort preferences: A) Prefers quieter spaces compared to others, B) Prefers cooler and quieter spaces, C) Prefers brighter and cooler spaces, D) Mostly comfortable, E) Preferences of this type keep changing as compared to others but they are usually comfortable with light levels}
 \label{fig:clustering}
 \end{center}
 \end{figure}
