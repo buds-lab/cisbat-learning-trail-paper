@@ -242,3 +242,6 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+
+# image files
+	#Images/raw_files
