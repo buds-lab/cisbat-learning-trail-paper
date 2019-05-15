@@ -1,5 +1,7 @@
 % !TEX root = 99_main.tex
 
+For the purposes of this publication, only an initial analysis of the collected environmental quality preference data is provided. The emphasis is to apply an unsupervised clustering technique to the occupant data to segment the users who provide more than five feedback points into cohorts of similar behavior. 
+
 \subsection{Discovering occupant personal comfort preferences}
  
 As shown in Figure \ref{fig:clustering}, five distinct clusters can be observed based on differences in preferences for temperature, light and noise levels across users. Predominantly users were comfortable and seldom preferred a change to cooler or quieter environments. Its interesting to discover differences in user "types" based on the clustering. For instance, type \emph{A} prefers quieter spaces as compared to others, whereas \emph{B} prefers quieter surroundings. Type \emph{C} prefers bright and cool spaces, type \emph{D} is mostly comfortable with any condition and type \emph{E} prefers a mix of conditions, adjusting preferences but mostly comfortable with light levels. Understanding and defining these differences between user types can be used to personalize spatial recommendations to individual users based on their past preferences. Its important to note that Individual user feedback was clustered using unsupervised learning techniques. We used Ward's method for hierarchical clustering based on euclidean distance. 
@@ -59,7 +61,7 @@ As shown in Figure \ref{fig:clustering}, five distinct clusters can be observed 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Fig3.jpg}
+\includegraphics[width=\textwidth, trim= 0cm 0cm 0cm 0cm,clip]{Images/Fig3.jpg}
 \caption{Indoor and outdoor comfort preference clustering: Users are grouped based on comfort preferences: A) Prefers quieter spaces compared to others, B) Prefers cooler and quieter spaces, C) Prefers brighter and cooler spaces, D) Mostly comfortable, E) Preferences of this type keep changing as compared to others but they are usually comfortable with light levels}
 \label{fig:clustering}
 \end{center}
