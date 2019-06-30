@@ -1,6 +1,12 @@
-This repository contains Latex assets, graphics and data used for a publication for CISBAT 2019 – International Scientific Conference on SDE4 Learning Trail project by Building and Urban Data Science Lab (https://www.budslab.org/).
+This repository contains Latex assets, graphics and data used for a publication for CISBAT 2019 – International Scientific Conference on SDE4 Learning Trail project by Building and Urban Data Science Lab (https://www.budslab.org/). 
 
-## Publication Title: The SDE4 Learning Trail: Crowdsourcing occupant comfort feedback at a netzero energy building in the tropics
+Check out the application at: https://www.learningtrail.io/
+
+Find an overview of the content for the six trails at SDE4, Net Zero Energy Building at: http://learningtrail.me/ 
+
+Please get in touch with clayton@nus.edu.sg if you are be interested to find out more details regarding the application or see potential to collaborate with the authors to implement Learning Trail in other locations.
+
+## Publication Title: The SDE4 Learning Trail: Crowdsourcing occupant comfort feedback at a netzero energy building 
 
 T. Sood, M. Quintana, P. Jayathissa, M. AbdelRahman, C. Miller
 Building and Urban Data Science (BUDS) Group, Department of Building, School of Design
