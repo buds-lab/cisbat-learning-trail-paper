@@ -1,6 +1,6 @@
 This repository contains Latex assets, graphics and data used for a publication for CISBAT 2019 – International Scientific Conference on SDE4 Learning Trail project by Building and Urban Data Science Lab (https://www.budslab.org/). 
 
-Check out the application at: https://www.learningtrail.io/
+Check out the application at: http://www.learningtrail.io/
 
 Find an overview of the content for the six trails at SDE4, Net Zero Energy Building at: http://learningtrail.me/ 
 
